@@ -1,0 +1,81 @@
+/* Reset some default styles for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply some basic styling to the body */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Style the hero section */
+.hero {
+    background-image: url('hero-image.jpg'); /* Замените на путь к вашему векторному фоновому изображению */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 36px;
+}
+
+/* Style the contact section */
+.contact {
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.contact h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.contact input[type="text"],
+.contact input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    .contact form {
+        max-width: 300px;
+    }
+}
